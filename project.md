@@ -1,6 +1,6 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-## My Project
+## Prediction PV Power Generation from Weather Conditions
 
 I applied machine learning techniques to investigate... Below is my report.
 
@@ -8,11 +8,11 @@ I applied machine learning techniques to investigate... Below is my report.
 
 ## Introduction 
 
-Here is a summary description of the topic. Here is the problem. This is why the problem is important.
+Solar photovoltaic power is one of the fastest-growing sources of renewable energy, but its output varies significantly with atmospheric conditions. Predicting how much power a PV plant will produce at any given moment is an important challenge for grid reliability and energy planning becuase of weather variability. 
 
-There is some dataset that we can use to help solve this problem. This allows a machine learning approach. This is how I will solve the problem using supervised/unsupervised/reinforcement/etc. machine learning.
+In this project, I use real operational data from a utility-scale solar plant and apply supervised machine learning techniques to model how environmental conditions influence AC power output. The dataset comes from the Solar Power Generation Data collection on Kaggle. It includes inverter power measurements and weather sensor data from a plant in India. By training a regression model on measurements of irradiance, ambient temperature, and module temperature, I found the most important of solar generation and and how to prevent inverter clipping and thermal loss.
 
-We did this to solve the problem. We concluded that...
+From the dataset, we find that solar irradiance is the primary driver of AC power output. Power increases rapidly, but the relationship is nonlinear. At higher irradiance, the power levels started to flatten which shows the technological limits of the panels. Temperature also plays a big role, because at higher temperatures, the output is reduced due to decreased cell efficiency. The model can predict inverter clipping events and overall defficiency. With that being said, a simple linear regression model does a good job showing the general relationship between these factors. 
 
 ## Data
 
